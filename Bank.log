@@ -16,3 +16,5 @@
 2022-06-20 15:53:34,481 : ERROR : SQL : Type Error. Invalid input: with the account number:'33'.in check_status()
 2022-06-20 16:29:47,409 : ERROR : manager : Type Error. Invalid input in main()
 2022-06-20 16:29:53,964 : ERROR : manager : Type Error. Invalid input in main()
+2022-06-20 16:41:49,880 : ERROR : manager : Type Error. Invalid input in main()
+2022-06-20 16:41:49,882 : ERROR : manager : Type Error. Invalid input in main()
