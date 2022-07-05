@@ -7,24 +7,6 @@
 get_ipython().system('pip install kaggle')
 
 
-# In[2]:
-
-
-get_ipython().system('kaggle --Version')
-
-
-# In[5]:
-
-
-get_ipython().system('kaggle --Version')
-
-
-# In[6]:
-
-
-get_ipython().system('kaggle --help')
-
-
 # In[7]:
 
 
