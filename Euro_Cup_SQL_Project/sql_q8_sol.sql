@@ -1,5 +1,10 @@
-SELECT match_no, team_id from penalty_shootout 
-ORDER BY kick_no DESC 
-LIMIT 2 
 
--- sql_q1_sol
+SELECT c.country_name, COUNT(p.kick_id) AS penalty_shots
+FROM euro_cup_2016.soccer_country AS c
+INNER JOIN euro_cup_2016.penalty_shootout AS p
+ON c.country_id = p.team_id
+GROUP BY c.country_name
+ORDER BY penalty_shots DESC
+LIMIT 1
+
+
