@@ -5,6 +5,7 @@ CREATE INDEX TID ON teaching(profId);
 CREATE INDEX Tcr ON teaching(crsCode);
 CREATE INDEX sid ON Student(id);
 CREATE INDEX pid ON Professor(id);
+CREATE INDEX course_idx1 ON Course(deptId);
 
 EXPLAIN ANALYZE
 SELECT name FROM Student,
@@ -52,5 +53,6 @@ CREATE INDEX TID ON teaching(profId);
 CREATE INDEX Tcr ON teaching(crsCode);
 CREATE INDEX sid ON Student(id);
 CREATE INDEX pid ON Professor(id);
+CREATE INDEX course_idx1 ON Course(deptId);
 
 */
