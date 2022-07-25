@@ -1,0 +1,2 @@
+The command line shows the following when the program is run: 
+"The most popular ticket came from the event Washington Spirits vs Sky Blue FC"
