@@ -1,1 +1,1 @@
-To run the application run autoinc_spark.py
+To run the application, run autoinc_spark.py
