@@ -2,9 +2,9 @@
 
 # Data Engineering Portfolio of Shrirup Dwivedi
 
-Welcome to the Data Engineering Portolio of Shrirup Dwivedi. This repository contained the work done by Shrirup Dwivedi during his Data Engineering Fellowship at Springboard. 
+Welcome to the Data Engineering Portolio of Shrirup Dwivedi. This repository contained the work done by Shrirup Dwivedi during his work at Springboard. 
 
-He completed 11 mini-projects and 2 capstone projects involving tools and technologies such as **Python, SQL, Azure, Hadoop, Spark, Docker, Airflow, Kafka and more.**
+He completed 11 minor and 2 major projects involving tools and technologies such as **Python, SQL, Azure, Hadoop, Spark, Docker, Airflow, Kafka and more.**
 
 He built end-to-end data pipeline in cloud enviroment in these two projects 
 
@@ -12,6 +12,6 @@ He built end-to-end data pipeline in cloud enviroment in these two projects
 
 **[Restaurants Review Analysis Data Pipeline using Yelp Dataset](https://github.com/shrirupdwivedi/Springboard/tree/main/Capstone)**
 
-Here is Shrirup's [LinkedIn](https://www.linkedin.com/in/shrirupdwivedi/), [resume](https://drive.google.com/file/d/1YyX5SOhlgrXDN7k3-8qJKtBUB53mISNV/view?usp=sharing) and [email](shrirup.dwivedi@alum.utoronto.ca) 
+Here is Shrirup's [LinkedIn](https://www.linkedin.com/in/shrirupdwivedi/) 
 
 Please feel free to contact him if you find this repository interesting!
