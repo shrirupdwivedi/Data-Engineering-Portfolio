@@ -1,12 +1,32 @@
-To run the fraud detection system:
-run docker-compose -f docker-compose.kafka.yml up then run docker-compose up in new tab
+ 🔍 Real-Time Fraud Detection with Kafka & PySpark
 
-The following shows the streaming data from two topics:
+This mini-project demonstrates a **real-time fraud detection pipeline** using:
+- **Apache Kafka** (KRaft mode, no Zookeeper)
+- **Python Streaming**
+- **Docker Compose**
 
-![image](https://user-images.githubusercontent.com/68109182/202558613-c2035769-2a6e-407f-9484-56cf7d2332df.png)
+It simulates a stream of credit card transactions and uses basic business rules to detect potential frauds in real-time.
 
+---
 
-The following shows data from topic streaming.transactions.legit
+## 🏗️ Project Architecture
 
+![image](https://github.com/user-attachments/assets/955cc503-a211-4585-8727-34b6a70cf64a)
 
-![image](https://user-images.githubusercontent.com/68109182/202558684-3cfd8c00-9970-43de-8cb7-e9998f1d814e.png)
+🚀 How to Run
+
+1. Clone the Repo
+git clone https://github.com/shrirupdwivedi/Data-Engineering-Portfolio.git
+cd Data-Engineering-Portfolio/Fraud_Detection_Streaming_Kafka
+2. Start Kafka
+docker-compose -f docker-compose.kafka.yml up -d
+Wait until logs say: Kafka Server started.
+3. Start Generator + Detector Services
+docker-compose up --build -d
+💡 What It Does
+
+generator: Simulates 1000 transactions per second and pushes to Kafka topic queueing.transactions.
+detector: Listens to this topic, applies simple rules, and routes messages to:
+streaming.transactions.legit
+streaming.transactions.fraud
+
