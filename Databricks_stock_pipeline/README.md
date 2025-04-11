@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/beffea24-6d1f-479c-9a65-8aace3e52d92)
+<img src="https://github.com/user-attachments/assets/beffea24-6d1f-479c-9a65-8aace3e52d92" alt="image" width="300"/>
 
 # 📈 Databricks Stock Trade/Quote Pipeline
 
