@@ -1,0 +1,76 @@
+{
+    "job_id": 507804055135720,
+    "creator_user_name": "shrirup.dwivedi@gmail.com",
+    "run_as_user_name": "shrirup.dwivedi@gmail.com",
+    "run_as_owner": true,
+    "settings": {
+      "name": "Full_Project_ETL",
+      "email_notifications": {
+        "no_alert_for_skipped_runs": false
+      },
+      "webhook_notifications": {},
+      "timeout_seconds": 0,
+      "max_concurrent_runs": 1,
+      "tasks": [
+        {
+          "task_key": "ingest_bronze",
+          "run_if": "ALL_SUCCESS",
+          "notebook_task": {
+            "notebook_path": "/Workspace/Users/shrirup.dwivedi@gmail.com/01_ingest_to_bronze",
+            "base_parameters": {
+              "trade_date": "2020-08-06"
+            },
+            "source": "WORKSPACE"
+          },
+          "existing_cluster_id": "0409-162306-u3k8w3",
+          "timeout_seconds": 0,
+          "email_notifications": {},
+          "webhook_notifications": {}
+        },
+        {
+          "task_key": "merge_silver",
+          "depends_on": [
+            {
+              "task_key": "ingest_bronze"
+            }
+          ],
+          "run_if": "ALL_SUCCESS",
+          "notebook_task": {
+            "notebook_path": "/Workspace/Users/shrirup.dwivedi@gmail.com/02_dedup_merge_to_silver",
+            "base_parameters": {
+              "trade_date": "2020-08-06"
+            },
+            "source": "WORKSPACE"
+          },
+          "existing_cluster_id": "0409-162306-u3k8w3",
+          "timeout_seconds": 0,
+          "email_notifications": {},
+          "webhook_notifications": {}
+        },
+        {
+          "task_key": "enrich_gold",
+          "depends_on": [
+            {
+              "task_key": "merge_silver"
+            }
+          ],
+          "run_if": "ALL_SUCCESS",
+          "notebook_task": {
+            "notebook_path": "/Workspace/Users/shrirup.dwivedi@gmail.com/03_enrich_quotes_gold",
+            "base_parameters": {
+              "trade_date": "2020-08-06"
+            },
+            "source": "WORKSPACE"
+          },
+          "existing_cluster_id": "0409-162306-u3k8w3",
+          "timeout_seconds": 0,
+          "email_notifications": {}
+        }
+      ],
+      "format": "MULTI_TASK",
+      "queue": {
+        "enabled": true
+      }
+    },
+    "created_time": 1744377369818
+  }
