@@ -2,9 +2,9 @@
 
 # Data Engineering Portfolio of Shrirup Dwivedi
 
-Welcome to the Data Engineering Portolio of Shrirup Dwivedi. This repository contained the work done by Shrirup Dwivedi during his work at Springboard. 
+Welcome to the Data Engineering Portolio of Shrirup Dwivedi.
 
-He completed 11 minor and 2 major projects involving tools and technologies such as **Python, SQL, Azure, Hadoop, Spark, Docker, Airflow, Kafka and more.**
+His data engineering work involves tools and technologies such as **Python, SQL, Azure, Hadoop, Spark, Docker, Airflow, Kafka, Databricks and more.**
 
 He built end-to-end data pipeline in cloud enviroment in these two projects 
 
