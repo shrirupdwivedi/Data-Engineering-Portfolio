@@ -28,7 +28,7 @@ Each project contains a detailed README with description, architecture diagrams 
 | **1. Equity Market Data Analysis ETL Pipeline**   | Processed high-frequency stock data to compute 30-min moving averages and price variations. Used window functions, handled missing trade events, and optimized storage via Parquetintegration.         | Python, Spark, Azure, SQL   |
 | **2. Real-Time Fraud Detection** | Streaming pipeline ingesting real-time data from APIs.   | Python, Kafka, Docker      |
 | **3. Databricks Stock/Trade Pipeline** | Lakehouse architecture with Delta Lake and AWS services.   | Spark, Delta Lake,Python, AWS, Databricks, SQL, CDC        |
-| **4. Automated Stock Market Data Pipeline** | Orchestrated an automated stock pipeline using Airflow DAGs with retries, alerts, and logging. Integrated data from Yahoo API and built a custom log analyzer for failure diagnostics with stateless ETL design.       | SQL, Redshift, dbt            |
+| **4. Automated Stock Market Data Pipeline** | Orchestrated an automated stock pipeline using Airflow DAGs with retries, alerts, and logging. Integrated data from Yahoo API and built a custom log analyzer for failure diagnostics with stateless ETL design.       | SQL, Airflow, Python           |
 
 
 > **Note:**  
